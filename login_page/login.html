@@ -14,45 +14,43 @@
     <div class="app">
 
         <header>
-            <h1>MediQR</h1>
-            <p>SECURE PATIENT INFORMATION SYSTEM</p>
+            <img src="logo.png" alt="MediQR Logo" class="logo">
+            <h1 id="app-title">Medi<span id="BlueQR">QR</span></h1>
+            <p id="app-subtitle">SECURE PATIENT INFORMATION SYSTEM</p>
         </header>
 
-        <section>
-            <h1> Welcome Back</h1>
-            <p> Sign in to securely access patient information. </p>
-        </section>
-    
     <div class="login-container">
+        <h1 id="Greeting"> Welcome Back</h1>
+            <p id="logintext"> Sign in to securely access patient information. </p>
+    
         <form id="login-form" action="/login" method="POST">
             <div class="form-group">
-                <label for="username">USERNAME OR STAFF ID</label>
+                <label for="username" class="loginlabel">USERNAME OR STAFF ID</label>
                 <br>
                 <input type="text" id="username" name="username" placeholder="Enter your staff ID"required>
             </div>
             <div class="form-group">
-                <label for="password">PASSWORD</label>
+                <label for="password" class="loginlabel">PASSWORD</label>
                 <br>
                 <input type="password" id="password" name="password" placeholder="Enter your password" required>
                 <br>
                 <a href="MediQR-Password-Reset.html" class="forgot-password">Forgot Password?</a>
             </div>
-            <button type="submit">Sign In</button>
+            <button type="submit" id="signinbutton">Sign In</button>
         </form>
 
-        <p>or</p>
+        <div class="divider">
+            <span>OR</span>
+        </div>
 
         <a href="MediQR-Biometrics-Login.html" class="biometrics-login">Sign in with Biometrics</a>
-        <p>Authorized healthcare personel only</p>
-
-        <hr>
-        <p>Don't have an account? <a href="MediQR-Register.html">Sign Up</a></p>
-
-        <hr>
-
-        <p> Your access in protected and monitored.</p>
-
-
+        
+        <p id="sign-up-text">Don't have an account? <a href="MediQR-Register.html" id="sign-up">Sign Up</a></p>
+        
+        <div class="bottom texts">
+            <p>Authorized healthcare personel only</p>
+            <p> Your access in protected and monitored.</p>
+        </div>
 </main>
 
     <script src="login.js"></script>
