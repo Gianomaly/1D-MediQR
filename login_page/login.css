@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px 24px;
+    border: 1px solid #e2e8f0;
+    border-radius: 32px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 
+              0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+.logo {
+    width: 70px;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 1px;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#app-title {
+    font-size: 28px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+#BlueQR {
+    color: #0067d5; /* Blue color for "QR" */
+}
+#app-subtitle {
+    font-size: 12px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    color: #555;
+}
+.login-container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 8px;
+}
+#Greeting {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+#logintext {
+    font-size: 15px;
+    margin-top: 2px;
+    margin-bottom: 20px;
+    color: #555;
+}
+.loginlabel {
+    font-size: 10px;
+    color: #000000;
+}
+#username, #password {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #d8d5d5;
+    border-radius: 10px;
+    background-color: #f3efef;
+}
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-right: 19px;
+    font-size: 12px;
+    color: #0067d5;
+    text-decoration: none;
+}
+#signinbutton {
+    width: 96%;
+    padding: 10px;
+    background-color: #0067d5;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+.divider span {
+    padding: 0 12px;
+    color: #555;
+    font-size: 12px;
+    font-weight: 300;
+}
+.biometrics-login {
+    display: block;
+    width: 92%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #107c48;
+    text-decoration: none;
+    background-color: #15a55f2c;
+    padding: 10px;
+    border-radius: 10px;
+}
+.botdivider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+.bottom.texts {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 10px;
+    color: #555;
+}
+#sign-up-text {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 13px;
+    color: #555;
+}
+#sign-up {
+    color: #0067d5;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
