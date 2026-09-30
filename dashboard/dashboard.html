@@ -7,55 +7,167 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="dashboard.css">
+    <script src="https://kit.fontawesome.com/464eb7faeb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 <main>
-    <header>
-        <p>Good Day,</p>
-        <h1>Nurse ________</h1>
-        <p>How can we help you today?</p>
+    <header class="app-header">
+        <div class="greeting-group">
+            <p class="subtext">Good evening,</p>
+            <h1 class="username">Nurse Maria 👋</h1>
+            <p class="prompt">How can we help you today?</p>
+        </div>
+        <div class="actions-group">
+            <button class="icon-btn bell-btn">
+                    <i class="fa-regular fa-bell"></i>
+                <span class="notification-dot"></span>
+            </button>
+            <button class="profile-btn">M</button>
+        </div>
     </header>
 
-    <section>
-    <p>PRIMARY ACTION</p>
-    <h1>Scan Patient QR</h1>
-    <p>Quickly access an authorized patient's medical information </p>
-    <a href="QR_Scanner.html">Scan QR Code</a>
-    </section>
-
-    <section>
-    <p>QUICK ACTIONS</p>
-    <div class="DashNav">
-    <nav>
-        <ul>
-            <div class="DashNavButton">
-                <li>
-                    <a href="PatientSearch.html">Search Patient</a>
-                    <p>Find by ID or name</p>
-                </li>
-            </div>
-            <div class="DashNavButton">
-                <li>
-                    <a href="RecentPatients.html">Recent Patients</a>
-                    <p>Previously accessed</p>
-                </li>
-            </div>
-            <div class="DashNavButton">
-                <li>
-                    <a href="Alerts.html">Notifications</a>
-                    <p>System alerts</p>
-                </li>
-            </div>
-        </ul>
-    </nav>
+    <div class="promo-card">
+        <div class="card-content">
+            <span class="badge">PRIMARY ACTION</span>
+            <h2 class="card-title">Scan Patient QR</h2>
+            <p class="card-description">
+                Quickly access an authorized patient's medical information.
+            </p>
+            <button class="scan-button">
+                    <img src="qr scanner.png" alt="scan qr" class="btn-icon">
+                    Scan QR Code
+            </button>
+        </div>
+        <div class="card-image-wrapper">
+            <img src="dashboard qr logo.png" alt="QR Scan Graphic" class="qr-graphic" />
+        </div>
     </div>
+
+    <section class="quick-actions-section">
+        <h2 class="section-title">QUICK ACTIONS</h2>
+
+        <div class="cards-grid">
+            <a href="<!--patient search html file right here-->" class="action-card card-blue">
+                <span id="search-icon">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                </span>
+                <h3 class="card-heading">Search Patient</h3>
+                <p class="card-subtext">Find by ID or name</p>
+            </a>
+            <a href="<!--recent patients html file right here-->" class="action-card card-green">
+                <span id="recent-icon">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                </span>
+                <h3 class="card-heading">Recent Patients</h3>
+                <p class="card-subtext">Previously accessed</p>
+            </a>
+            <a href="alerts.html" class="action-card card-purple">
+                <span id="alerts-icon">
+                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                </span>
+                <h3 class="card-heading">Notifications</h3>
+                <p class="card-subtext">System alerts</p>
+            </a>
+        </div>
     </section>
 
-    <section>
-        <p>Recent Patients</p>
-        <a href="RecentPatients.html">View all</a>
-    </section>
+    <section class="recent-patients-section">
+  
+  
+  <div class="section-header">
+    <h2 class="section-title">RECENT PATIENTS</h2>
+    <a href="all-patients.html" class="view-all-link">View all</a>
+  </div>
+  
+  <div class="patient-list">
+    
+    <a href="patient-juan.html" class="patient-card">
+      <div class="avatar avatar-blue">JD</div>
+      <div class="patient-info">
+        <h3 class="patient-name">Juan Dela Cruz</h3>
+        <p class="patient-details">ID: P-1024 <span class="dot">•</span> Ward 3A</p>
+      </div>
+      <div class="patient-meta">
+        <span class="time-stamp">8:42 PM</span>
+        <span class="arrow-icon">›</span>
+      </div>
+    </a>
+
+    <a href="patient-maria.html" class="patient-card">
+      <div class="avatar avatar-green">MS</div>
+      <div class="patient-info">
+        <h3 class="patient-name">Maria Santos</h3>
+        <p class="patient-details">ID: P-0897 <span class="dot">•</span> ICU</p>
+      </div>
+      <div class="patient-meta">
+        <span class="time-stamp">7:15 PM</span>
+        <span class="arrow-icon">›</span>
+      </div>
+    </a>
+
+    <a href="patient-roberto.html" class="patient-card">
+      <div class="avatar avatar-purple">RR</div>
+      <div class="patient-info">
+        <h3 class="patient-name">Roberto Reyes</h3>
+        <p class="patient-details">ID: P-1156 <span class="dot">•</span> ER</p>
+      </div>
+      <div class="patient-meta">
+        <span class="time-stamp">5:30 PM</span>
+        <span class="arrow-icon">›</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<div class="shift-status-card">
+  
+  <div class="shift-icon-box">
+    <i class="fa fa-clock-o" aria-hidden="true"></i>
+  </div>
+
+  <div class="shift-details">
+    <h3 class="shift-title">Night Shift — <span class="status-text">Active</span></h3>
+    <p class="shift-subtext">7:00 PM – 7:00 AM <span class="divider-dot">•</span> Cardiology Ward</p>
+  </div>
+
+  <div class="active-indicator-wrapper">
+    <span class="pulse-dot"></span>
+  </div>
+
+</div>
+
+<nav class="bottom-nav">
+  
+  <a href="dashboard.html" class="nav-item active">
+    <i class="fa-solid fa-house nav-icon"></i>
+    <span class="nav-text">Home</span>
+  </a>
+
+  <a href="patients.html" class="nav-item">
+    <i class="fa-solid fa-users nav-icon"></i>
+    <span class="nav-text">Patients</span>
+  </a>
+
+  <a href="scan.html" class="nav-item scan-tab">
+    <div class="scan-btn-wrapper">
+      <i class="fa-solid fa-expand scan-icon"></i>
+    </div>
+    <span class="nav-text">Scan</span>
+  </a>
+
+  <a href="alerts.html" class="nav-item badge-item">
+    <i class="fa-solid fa-bell nav-icon"></i>
+    <span class="nav-text">Alerts</span>
+  </a>
+
+  <a href="profile.html" class="nav-item">
+    <i class="fa-solid fa-user nav-icon"></i>
+    <span class="nav-text">Profile</span>
+  </a>
+
+</nav>
 
 </main>
 </body>
