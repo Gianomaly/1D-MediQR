@@ -3,57 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>MediQR_Login</title>
-
+    <title>MediQR - Login</title>
     <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/464eb7faeb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cloudflare.com">
 </head>
-
 <body>
-<main>  
-    <div class="app">
 
-        <header>
-            <img src="logo.png" alt="MediQR Logo" class="logo">
+    <div class="auth-container">
+
+        <header class="auth-header">
+            <div class="logo-image-wrapper">
+                <img src="logo.png" alt="MediQR Logo" class="brand-logo-img">
+            </div>
             <h1 id="app-title">Medi<span id="BlueQR">QR</span></h1>
             <p id="app-subtitle">SECURE PATIENT INFORMATION SYSTEM</p>
         </header>
 
-    <div class="login-container">
-        <h1 id="Greeting"> Welcome Back</h1>
-            <p id="logintext"> Sign in to securely access patient information. </p>
-    
-        <form id="login-form" action="/login" method="POST">
-            <div class="form-group">
-                <label for="username" class="loginlabel">USERNAME OR STAFF ID</label>
-                <br>
-                <input type="text" id="username" name="username" placeholder="Enter your staff ID"required>
-            </div>
-            <div class="form-group">
-                <label for="password" class="loginlabel">PASSWORD</label>
-                <br>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                <br>
-                <a href="MediQR-Password-Reset.html" class="forgot-password">Forgot Password?</a>
-            </div>
-            <button type="submit" id="signinbutton">Sign In</button>
-        </form>
-
-        <div class="divider">
-            <span>OR</span>
-        </div>
-
-        <a href="MediQR-Biometrics-Login.html" class="biometrics-login">Sign in with Biometrics</a>
+        <main class="auth-form-section">
+            <h2 id="Greeting">Welcome Back</h2>
+            <p id="logintext">Sign in to securely access patient information.</p>
         
-        <p id="sign-up-text">Don't have an account? <a href="MediQR-Register.html" id="sign-up">Sign Up</a></p>
-        
-        <footer class="bottom texts">
-            <p>Authorized healthcare personel only</p>
-            <p> Your access in protected and monitored.</p>
+            <form id="login-form" action="../dashboard\dashboard.html" method="POST">
+                
+                <div class="form-group">
+                    <label for="username" class="loginlabel">USERNAME OR STAFF ID</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-id-card field-icon"></i>
+                        <input type="text" id="username" name="username" placeholder="Enter your staff ID" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password" class="loginlabel">PASSWORD</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-key field-icon"></i>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <a href="../password-reset\password-reset.html" class="forgot-password">Forgot Password?</a>
+                </div>
+                
+                <button type="submit" id="signinbutton">Sign In</button>
+            </form>
+
+            <div class="divider">
+                <span>OR</span>
+            </div>
+
+            
+            <a href="../biometrics_login\biometrics_login.html" class="biometrics-login">
+                <i class="fa-solid fa-fingerprint bio-icon"></i> Sign in with Biometrics
+            </a>
+            
+            <p id="sign-up-text">Don't have an account? <a href="../sign-up\sign-up.html" id="sign-up">Sign Up</a></p>
+        </main>
+
+        <footer class="bottom-texts">
+            <div class="security-notice-row">
+                <i class="fa-solid fa-lock security-icon"></i>
+                <p>Authorized healthcare personnel only</p>
+            </div>
+            <p class="monitoring-alert">Your access is protected and monitored.</p>
         </footer>
-</main>
+
+    </div>
 
     <script src="login.js"></script>
-
 </body>
 </html>

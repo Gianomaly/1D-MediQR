@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 16px;
+}
+
+.auth-container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 412px;
+  min-height: 840px;
+  border-radius: 40px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.05);
+  padding: 40px 28px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+.auth-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.logo-image-wrapper {
+  width: 52px;                 
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  border-radius: 14px;
+  overflow: hidden;            
+}
+
+.brand-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;         
+}
+
+.brand-name {
+  font-size: 24px;
+  font-weight: 800;
+  color: #0b1a30;
+  letter-spacing: -0.5px;
+}
+
+.blue-text {
+  color: #1e62d0;
+}
+
+.brand-subtitle {
+  font-size: 10px;
+  font-weight: 700;
+  color: #8c9ba5;
+  letter-spacing: 0.8px;
+  margin-top: 4px;
+}
+
+.biometric-section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-heading {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0b1a30;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.welcome-subtext {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.45;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.scanner-hub {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 32px 0;
+}
+
+.fingerprint-btn {
+  width: 96px;
+  height: 96px;
+  background-color: #f0fbf7;
+  border: 2px solid #d1f5ea;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(10, 160, 116, 0.1);
+  z-index: 5;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.fingerprint-graphic {
+  font-size: 42px;
+  color: #0aa074;
+  transition: color 0.3s ease;
+}
+
+.pulse-ring-outer, .pulse-ring-inner {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #0aa074;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transform: scale(0.7);
+}
+
+.scanner-hub.scanning .pulse-ring-outer {
+  animation: rippleGlow 1.6s infinite ease-out;
+}
+.scanner-hub.scanning .pulse-ring-inner {
+  animation: rippleGlow 1.6s infinite ease-out 0.8s;
+}
+.scanner-hub.scanning .fingerprint-graphic {
+  color: #1e62d0;
+}
+.scanner-hub.scanning .fingerprint-btn {
+  background-color: #f3f7ff;
+  border-color: #cbdcf7;
+  box-shadow: 0 8px 24px rgba(30, 98, 208, 0.1);
+}
+
+.scanner-hub.success .fingerprint-btn {
+  background-color: #0aa074;
+  border-color: #0aa074;
+  transform: scale(1.05);
+}
+.scanner-hub.success .fingerprint-graphic {
+  color: #ffffff;
+}
+
+@keyframes rippleGlow {
+  0% {
+    transform: scale(0.65);
+    opacity: 0.6;
+    border-color: #0aa074;
+  }
+  50% {
+    border-color: #1e62d0;
+  }
+  100% {
+    transform: scale(1.15);
+    opacity: 0;
+  }
+}
+
+.status-message {
+  font-size: 14px;
+  font-weight: 600;
+  color: #8c9ba5;
+  margin-bottom: auto;
+  text-align: center;
+}
+
+.status-message.loading { color: #1e62d0; }
+.status-message.granted { color: #0aa074; }
+
+.fallback-btn {
+  width: 100%;
+  height: 48px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  color: #64748b;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s ease;
+}
+
+.fallback-btn:hover {
+  background-color: #f8fafc;
+  color: #0b1a30;
+}
+
+.auth-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.security-icon {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.security-text {
+  font-size: 11px;
+  color: #94a3b8;
+  font-weight: 500;
+}
