@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Information</title>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="patient_profile.css">
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/464eb7faeb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="phone-container">
+        <div class="screen">
+            
+            <!-- Top Navigation Bar -->
+            <header class="navbar">
+                <a href="dashboard.html" class="icon-btn back-btn" aria-label="Go to dashboard">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+                <h1 class="nav-title">Patient Information</h1>
+                <div class="header-right-btns">
+                    <button class="icon-btn lock-btn" aria-label="Security status">
+                        <i class="fa-solid fa-lock"></i>
+                    </button>
+                    <button class="icon-btn menu-btn" aria-label="More options">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Scrollable Content -->
+            <div class="profile-scroll-content">
+
+                <!-- Patient Bio Header -->
+                <div class="patient-bio-card">
+                    <div class="patient-avatar-box">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="patient-bio-info">
+                        <h2>Juan Dela Cruz</h2>
+                        <span class="patient-id">Patient ID: <strong>P-1024</strong></span>
+                        <div class="patient-tags">
+                            <span class="tag">AGE <strong>45</strong></span>
+                            <span class="tag">SEX <strong>Male</strong></span>
+                            <span class="tag">BLOOD TYPE <strong>O+</strong></span>
+                            <span class="tag">WARD <strong>3A</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Authorized Access Banner -->
+                <div class="auth-access-banner">
+                    <div class="auth-left">
+                        <i class="fa-solid fa-lock"></i>
+                        <span>Authorized Access</span>
+                    </div>
+                    <div class="auth-right">
+                        <span class="status-dot"></span>
+                        <span>Access Level: <strong>Nurse</strong></span>
+                    </div>
+                </div>
+
+                <!-- Admission Details Banner -->
+                <div class="admission-banner">
+                    <div class="admission-col">
+                        <span class="col-label">ADMITTED</span>
+                        <span class="col-val">September 7, 2026</span>
+                    </div>
+                    <div class="admission-col">
+                        <span class="col-label">ATTENDING</span>
+                        <span class="col-val">Dr. Ana Reyes</span>
+                    </div>
+                    <div class="admission-col">
+                        <span class="col-label">STATUS</span>
+                        <span class="col-val status-val"><span class="orange-dot"></span> Admitted</span>
+                    </div>
+                </div>
+
+                <!-- Medical Menu List Cards -->
+                <div class="medical-menu-list">
+                    <!-- Allergies -->
+                    <div class="menu-card alert-bg">
+                        <div class="menu-icon-box red-icon">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                        <span class="menu-title">Allergies</span>
+                        <div class="menu-right">
+                            <span class="badge-pill red-pill">3 found</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <!-- Current Medications -->
+                    <div class="menu-card">
+                        <div class="menu-icon-box purple-icon">
+                            <i class="fa-solid fa-pills"></i>
+                        </div>
+                        <span class="menu-title">Current Medications</span>
+                        <div class="menu-right">
+                            <span class="badge-pill purple-pill">4 active</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <!-- Medical History -->
+                    <div class="menu-card">
+                        <div class="menu-icon-box green-icon">
+                            <i class="fa-solid fa-file-medical"></i>
+                        </div>
+                        <span class="menu-title">Medical History</span>
+                        <div class="menu-right">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <!-- Diagnosis -->
+                    <div class="menu-card">
+                        <div class="menu-icon-box blue-icon">
+                            <i class="fa-solid fa-stethoscope"></i>
+                        </div>
+                        <span class="menu-title">Diagnosis</span>
+                        <div class="menu-right">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <!-- Laboratory Results -->
+                    <div class="menu-card">
+                        <div class="menu-icon-box cyan-icon">
+                            <i class="fa-solid fa-flask"></i>
+                        </div>
+                        <span class="menu-title">Laboratory Results</span>
+                        <div class="menu-right">
+                            <span class="badge-pill cyan-pill">Sep 8–9, 2026</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Record Accessed Footer Note -->
+                <div class="access-footer-note">
+                    <i class="fa-solid fa-lock"></i>
+                    <span>Record accessed by <strong>Nurse Maria L.</strong> • Sep 9, 2026 at 9:41 PM</span>
+                </div>
+
+            </div>
+
+            <!-- Uniform Bottom Navigation Bar -->
+            <nav class="bottom-nav">
+                <a href="dashboard.html" class="nav-item">
+                    <i class="fa-solid fa-house nav-icon"></i>
+                    <span class="nav-text">Home</span>
+                </a>
+
+                <a href="patients.html" class="nav-item active">
+                    <i class="fa-solid fa-users nav-icon"></i>
+                    <span class="nav-text">Patients</span>
+                </a>
+
+                <a href="scan.html"

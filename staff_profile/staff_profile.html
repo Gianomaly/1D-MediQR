@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Profile</title>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="staff_profile.css">
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/464eb7faeb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="phone-container">
+        <div class="screen">
+            
+            <!-- Top Navigation Bar -->
+            <header class="navbar">
+                <h1 class="nav-title">Profile</h1>
+                <button class="icon-btn options-btn" aria-label="More options">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </button>
+            </header>
+
+            <!-- Scrollable Content -->
+            <div class="profile-scroll-content">
+
+                <!-- Hero Profile Card with Banner -->
+                <div class="profile-hero-card">
+                    <div class="hero-banner-bg"></div>
+                    <div class="profile-avatar-wrapper">
+                        <div class="profile-avatar-box">M</div>
+                        <span class="online-dot"></span>
+                    </div>
+                    <div class="profile-hero-info">
+                        <h2>Nurse Maria</h2>
+                        <span class="profile-subtitle">Registered Nurse • Ward 3A</span>
+                        <div class="status-active-row">
+                            <span class="green-dot"></span> Active
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Staff Info Details Grid (2x2) -->
+                <div class="info-grid-section">
+                    <div class="info-grid-card">
+                        <span class="grid-label">STAFF ID</span>
+                        <span class="grid-value blue-text">N-2048</span>
+                    </div>
+                    <div class="info-grid-card">
+                        <span class="grid-label">DEPARTMENT</span>
+                        <span class="grid-value">Ward 3A</span>
+                    </div>
+                    <div class="info-grid-card">
+                        <span class="grid-label">ACCESS LEVEL</span>
+                        <span class="grid-value green-text">Nurse</span>
+                    </div>
+                    <div class="info-grid-card">
+                        <span class="grid-label">LAST LOGIN</span>
+                        <span class="grid-value">Today, 8:32 AM</span>
+                    </div>
+                </div>
+
+                <!-- Account & Security Section Title -->
+                <h3 class="section-heading">ACCOUNT & SECURITY</h3>
+
+                <!-- Menu List Cards -->
+                <div class="settings-menu-list">
+                    
+                    <!-- Personal Information Item -->
+                    <div class="menu-item-card">
+                        <div class="menu-icon-box blue-bg">
+                            <i class="fa-solid fa-user-gear"></i>
+                        </div>
+                        <div class="menu-item-text">
+                            <h4>Personal Information</h4>
+                            <span>Name, email, contact</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </div>
+
+                    <!-- Change Password Item -->
+                    <div class="menu-item-card">
+                        <div class="menu-icon-box purple-bg">
+                            <i class="fa-solid fa-key"></i>
+                        </div>
+                        <div class="menu-item-text">
+                            <h4>Change Password</h4>
+                            <span>Last changed 30 days ago</span>
+                        </div>
+                        <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </div>
+
+                    <!-- Biometric Login Item with Toggle Switch -->
+                    <div class="menu-item-card">
+                        <div class="menu-icon-box teal-bg">
+                            <i class="fa-solid fa-fingerprint"></i>
+                        </div>
+                        <div class="menu-item-text">
+                            <h4>Biometric Login</h4>
+                            <span>Face ID / Fingerprint enabled</span>
+                        </div>
+                        <!-- Custom Toggle Switch -->
+                        <label class="toggle-switch">
+                            <input type="checkbox" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Bottom Navigation Bar (Uniform) -->
+            <nav class="bottom-nav">
+                <a href="dashboard.html" class="nav-item">
+                    <i class="fa-solid fa-house nav-icon"></i>
+                    <span class="nav-text">Home</span>
+                </a>
+
+                <a href="patients.html" class="nav-item">
+                    <i class="fa-solid fa-users nav-icon"></i>
+                    <span class="nav-text">Patients</span>
+                </a>
+
+                <a href="scan.html" class="nav-item scan-tab">
+                    <div class="scan-btn-wrapper">
+                        <i class="fa-solid fa-expand scan-icon"></i>
+                    </div>
+                    <span class="nav-text">Scan</span>
+                </a>
+
+                <a href="alerts.html" class="nav-item badge-item">
+                    <i class="fa-solid fa-bell nav-icon"></i>
+                    <span class="nav-text">Alerts</span>
+                </a>
+
+                <a href="profile.html" class="nav-item active">
+                    <i class="fa-solid fa-user nav-icon"></i>
+                    <span class="nav-text">Profile</span>
+                </a>
+            </nav>
+
+        </div>
+    </div>
+
+</body>
+</html>

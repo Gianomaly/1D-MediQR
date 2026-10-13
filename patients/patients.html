@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patients Directory</title>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="patients.css">
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/464eb7faeb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="phone-container">
+        <div class="screen">
+            
+            <!-- Top Header Section -->
+            <header class="header-section">
+                <div class="header-titles">
+                    <h1>Patients</h1>
+                    <p>Manage and view patient records</p>
+                </div>
+                <div class="header-actions">
+                    <button class="icon-btn add-btn" aria-label="Add patient">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="Search by name, ID, or ward..." class="search-input">
+            </div>
+
+            <!-- Filter Chips -->
+            <div class="filter-chips">
+                <button class="chip active">All (24)</button>
+                <button class="chip">Admitted (12)</button>
+                <button class="chip">Critical (3)</button>
+                <button class="chip">Discharged</button>
+            </div>
+
+            <!-- Scrollable Patient Cards List -->
+            <div class="patients-list">
+
+                <!-- Patient Card 1 -->
+                <a href="patient-profile.html" class="patient-card">
+                    <div class="patient-avatar-box blue">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="patient-info">
+                        <div class="patient-name-row">
+                            <h3>Juan Dela Cruz</h3>
+                            <span class="status-badge orange">Admitted</span>
+                        </div>
+                        <span class="patient-meta-id">ID: <strong>P-1024</strong></span>
+                        <div class="patient-tags-row">
+                            <span>Age 45</span> • <span>Male</span> • <span>Ward 3A</span>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </a>
+
+                <!-- Patient Card 2 -->
+                <a href="patient-profile.html" class="patient-card critical-card">
+                    <div class="patient-avatar-box red">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="patient-info">
+                        <div class="patient-name-row">
+                            <h3>Maria Santos</h3>
+                            <span class="status-badge red">Critical</span>
+                        </div>
+                        <span class="patient-meta-id">ID: <strong>P-1025</strong></span>
+                        <div class="patient-tags-row">
+                            <span>Age 62</span> • <span>Female</span> • <span>ICU B</span>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </a>
+
+                <!-- Patient Card 3 -->
+                <a href="patient-profile.html" class="patient-card">
+                    <div class="patient-avatar-box green">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="patient-info">
+                        <div class="patient-name-row">
+                            <h3>Pedro Reyes</h3>
+                            <span class="status-badge green">Stable</span>
+                        </div>
+                        <span class="patient-meta-id">ID: <strong>P-1028</strong></span>
+                        <div class="patient-tags-row">
+                            <span>Age 38</span> • <span>Male</span> • <span>Ward 2B</span>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </a>
+
+                <!-- Patient Card 4 -->
+                <a href="patient-profile.html" class="patient-card">
+                    <div class="patient-avatar-box blue">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="patient-info">
+                        <div class="patient-name-row">
+                            <h3>Clara Lim</h3>
+                            <span class="status-badge orange">Admitted</span>
+                        </div>
+                        <span class="patient-meta-id">ID: <strong>P-1031</strong></span>
+                        <div class="patient-tags-row">
+                            <span>Age 51</span> • <span>Female</span> • <span>Ward 1C</span>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </a>
+
+                <!-- Patient Card 5 -->
+                <a href="patient-profile.html" class="patient-card">
+                    <div class="patient-avatar-box purple">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="patient-info">
+                        <div class="patient-name-row">
+                            <h3>Antonio Gomez</h3>
+                            <span class="status-badge gray">Discharged</span>
+                        </div>
+                        <span class="patient-meta-id">ID: <strong>P-1012</strong></span>
+                        <div class="patient-tags-row">
+                            <span>Age 29</span> • <span>Male</span> • <span>Outpatient</span>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </a>
+
+            </div>
+
+            <!-- Your Custom Bottom Navigation Bar -->
+            <nav class="bottom-nav">
+                <a href="dashboard.html" class="nav-item">
+                    <i class="fa-solid fa-house nav-icon"></i>
+                    <span class="nav-text">Home</span>
+                </a>
+
+                <a href="patients.html" class="nav-item active">
+                    <i class="fa-solid fa-users nav-icon"></i>
+                    <span class="nav-text">Patients</span>
+                </a>
+
+                <a href="scan.html" class="nav-item scan-tab">
+                    <div class="scan-btn-wrapper">
+                        <i class="fa-solid fa-expand scan-icon"></i>
+                    </div>
+                    <span class="nav-text">Scan</span>
+                </a>
+
+                <a href="alerts.html" class="nav-item badge-item">
+                    <i class="fa-solid fa-bell nav-icon"></i>
+                    <span class="nav-text">Alerts</span>
+                </a>
+
+                <a href="profile.html" class="nav-item">
+                    <i class="fa-solid fa-user nav-icon"></i>
+                    <span class="nav-text">Profile</span>
+                </a>
+            </nav>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts</title>
+    <link rel="stylesheet" href="alerts.css">
+    <script src="https://kit.fontawesome.com/464eb7faeb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="phone-container">
+        <div class="screen">
+            
+            <!-- Top Header Section -->
+            <header class="header-section">
+                <div class="header-titles">
+                    <h1>Alerts</h1>
+                    <p>Important updates and system alerts</p>
+                </div>
+                <div class="header-actions">
+                    <a href="#" class="mark-read-link">Mark all read</a>
+                    <div class="profile-avatar">M</div>
+                </div>
+            </header>
+
+            <!-- Filter Tabs -->
+            <div class="tabs-container">
+                <button class="tab-btn active">All</button>
+                <button class="tab-btn">Unread (3)</button>
+                <button class="tab-btn">System</button>
+                <button class="tab-btn">Patients</button>
+            </div>
+
+            <!-- Scrollable Alerts List -->
+            <div class="alerts-list">
+                <div class="alert-card critical unread">
+                    <div class="alert-icon-box red">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <div class="alert-content">
+                        <div class="alert-title-row">
+                            <h3>Critical Patient Alert</h3>
+                            <span class="unread-dot red-dot"></span>
+                        </div>
+                        <p class="alert-desc">Juan Dela Cruz has a new vital-sign update. Blood pressure elevated at 168/104 mmHg.</p>
+                        <span class="alert-time">5 minutes ago</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </div>
+
+                <div class="alert-card unread">
+                    <div class="alert-icon-box blue">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <div class="alert-content">
+                        <div class="alert-title-row">
+                            <h3>Patient Record Updated</h3>
+                            <span class="unread-dot blue-dot"></span>
+                        </div>
+                        <p class="alert-desc">Maria Santos’ medical record was updated by an authorized nurse.</p>
+                        <span class="alert-time">18 minutes ago</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </div>
+
+                <div class="alert-card unread">
+                    <div class="alert-icon-box purple">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <div class="alert-content">
+                        <div class="alert-title-row">
+                            <h3>System Maintenance</h3>
+                            <span class="unread-dot blue-dot"></span>
+                        </div>
+                        <p class="alert-desc">Scheduled system maintenance tonight at 11:00 PM. Expect brief downtime of 15 minutes.</p>
+                        <span class="alert-time">1 hour ago</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </div>
+
+                <div class="alert-card">
+                    <div class="alert-icon-box green">
+                        <i class="fa-solid fa-pills"></i>
+                    </div>
+                    <div class="alert-content">
+                        <div class="alert-title-row">
+                            <h3>Medication Reminder</h3>
+                        </div>
+                        <p class="alert-desc">Medication information for Pedro Reyes requires review. Dosage conflict flagged.</p>
+                        <span class="alert-time">2 hours ago</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </div>
+
+                <div class="alert-card">
+                    <div class="alert-icon-box orange">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+                    <div class="alert-content">
+                        <div class="alert-title-row">
+                            <h3>Lab Results Available</h3>
+                        </div>
+                        <p class="alert-desc">New lab work results are ready for review for Patient ID #4829.</p>
+                        <span class="alert-time">3 hours ago</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </div>
+            </div>
+
+            <!-- Uniform Bottom Navigation Bar -->
+            <nav class="bottom-nav">
+                <a href="dashboard.html" class="nav-item">
+                    <i class="fa-solid fa-house nav-icon"></i>
+                    <span class="nav-text">Home</span>
+                </a>
+
+                <a href="patients.html" class="nav-item">
+                    <i class="fa-solid fa-users nav-icon"></i>
+                    <span class="nav-text">Patients</span>
+                </a>
+
+                <a href="scan.html" class="nav-item scan-tab">
+                    <div class="scan-btn-wrapper">
+                        <i class="fa-solid fa-expand scan-icon"></i>
+                    </div>
+                    <span class="nav-text">Scan</span>
+                </a>
+
+                <a href="alerts.html" class="nav-item badge-item active">
+                    <i class="fa-solid fa-bell nav-icon"></i>
+                    <span class="nav-text">Alerts</span>
+                </a>
+
+                <a href="profile.html" class="nav-item">
+                    <i class="fa-solid fa-user nav-icon"></i>
+                    <span class="nav-text">Profile</span>
+                </a>
+            </nav>
+
+        </div>
+    </div>
+
+</body>
+</html>

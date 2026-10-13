@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan Patient QR</title>
+    <link rel="stylesheet" href="qr_scanner.css">
+    <script src="https://kit.fontawesome.com/464eb7faeb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="phone-container">
+        <div class="screen">
+            
+            <header class="navbar">
+                <a href="../dashboard/dashboard.html" class="icon-btn back-btn" aria-label="Go to dashboard">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </a>
+                <h1 class="nav-title">Scan Patient QR</h1>
+                <button class="icon-btn lock-btn" aria-label="Security status">
+                    <i class="fa-solid fa-lock"></i>
+                </button>
+            </header>
+
+            <div class="viewfinder-container">
+                <div class="corner top-left"></div>
+                <div class="corner top-right"></div>
+                <div class="corner bottom-left"></div>
+                <div class="corner bottom-right"></div>
+
+                <div class="qr-placeholder">
+                    <div class="qr-code-grid"></div>
+                </div>
+
+                <div class="camera-badge">
+                    <i class="fa-solid fa-camera"></i> Camera
+                </div>
+            </div>
+
+            <section class="instructions-section">
+                <h2>Position the patient’s QR code inside the frame</h2>
+                <p>Make sure the QR code is clearly visible and readable.</p>
+
+                <button class="scan-btn">
+                    <i class="fa-solid fa-expand"></i> Tap to Scan
+                </button>
+            </section>
+
+            <div class="secure-banner">
+                <div class="secure-icon">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="secure-text">
+                    <strong>Secure Access</strong>
+                    <span>Only authorized healthcare personnel can access patient information.</span>
+                </div>
+            </div>
+
+            <footer class="action-footer">
+                <a href="../dashboard/dashboard.html" class="btn-cancel">Cancel</a>
+                <button class="icon-btn flash-btn" aria-label="Toggle flashlight">
+                    <i class="fa-solid fa-bolt"></i>
+                </button>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+</html>
