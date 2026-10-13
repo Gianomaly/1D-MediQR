@@ -1,4 +1,3 @@
-/* CSS Reset & Variables */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,7 +13,6 @@ body {
     min-height: 100vh;
 }
 
-/* Mobile Container Frame */
 .phone-container {
     width: 100%;
     max-width: 410px;
@@ -37,7 +35,6 @@ body {
     position: relative;
 }
 
-/* Header Section */
 .header-section {
     display: flex;
     justify-content: space-between;
@@ -87,7 +84,6 @@ body {
     font-size: 14px;
 }
 
-/* Filter Tabs */
 .tabs-container {
     display: flex;
     gap: 8px;
@@ -117,22 +113,19 @@ body {
     font-weight: 600;
 }
 
-/* Scrollable Alerts List */
 .alerts-list {
     flex: 1;
     overflow-y: auto;
-    padding-bottom: 80px; /* leaves room for bottom nav */
+    padding-bottom: 80px; 
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-/* Hide scrollbar for clean app appearance */
 .alerts-list::-webkit-scrollbar {
     display: none;
 }
 
-/* Alert Card Styles */
 .alert-card {
     background: #f9fafb;
     border: 1px solid #f3f4f6;
@@ -161,7 +154,6 @@ body {
     flex-shrink: 0;
 }
 
-/* Icon box theme colors */
 .alert-icon-box.red { background-color: #fee2e2; color: #dc2626; }
 .alert-icon-box.blue { background-color: #dbeafe; color: #2563eb; }
 .alert-icon-box.purple { background-color: #f3e8ff; color: #9333ea; }
@@ -212,7 +204,6 @@ body {
     align-self: center;
 }
 
-/* --- Your Custom Bottom Navigation Bar Styles --- */
 .bottom-nav {
     position: absolute;
     bottom: 0;

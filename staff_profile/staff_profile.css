@@ -1,4 +1,3 @@
-/* CSS Reset & Variables */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,7 +13,6 @@ body {
     min-height: 100vh;
 }
 
-/* Mobile Container Frame */
 .phone-container {
     width: 100%;
     max-width: 410px;
@@ -37,7 +35,6 @@ body {
     position: relative;
 }
 
-/* Top Navbar */
 .navbar {
     display: flex;
     align-items: center;
@@ -70,11 +67,10 @@ body {
     background: #e5e7eb;
 }
 
-/* Scrollable Content */
 .profile-scroll-content {
     flex: 1;
     overflow-y: auto;
-    padding-bottom: 80px; /* space for bottom navigation bar */
+    padding-bottom: 80px; 
     display: flex;
     flex-direction: column;
     gap: 14px;
@@ -84,7 +80,6 @@ body {
     display: none;
 }
 
-/* Hero Profile Card */
 .profile-hero-card {
     background: #ffffff;
     border: 1px solid #f0f2f5;
@@ -168,7 +163,6 @@ body {
     border-radius: 50%;
 }
 
-/* Staff Info Details Grid (2x2) */
 .info-grid-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -201,7 +195,6 @@ body {
 .blue-text { color: #1e62d0; }
 .green-text { color: #059669; }
 
-/* Section Heading */
 .section-heading {
     font-size: 11px;
     font-weight: 700;
@@ -211,7 +204,6 @@ body {
     margin-left: 2px;
 }
 
-/* Settings Menu List */
 .settings-menu-list {
     display: flex;
     flex-direction: column;
@@ -239,7 +231,6 @@ body {
     flex-shrink: 0;
 }
 
-/* Menu Icon Themes */
 .blue-bg { background-color: #dbeafe; color: #1e62d0; }
 .purple-bg { background-color: #f3e8ff; color: #9333ea; }
 .teal-bg { background-color: #ccfbf1; color: #0d9488; }
@@ -265,7 +256,6 @@ body {
     color: #d1d5db;
 }
 
-/* Custom Toggle Switch Styles */
 .toggle-switch {
     position: relative;
     display: inline-block;
@@ -309,7 +299,6 @@ body {
     transform: translateX(20px);
 }
 
-/* --- Bottom Navigation Bar Styles (Uniform) --- */
 .bottom-nav {
     position: absolute;
     bottom: 0;

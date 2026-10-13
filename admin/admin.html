@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCore - Admin Desktop Portal</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="https://kit.fontawesome.com/464eb7faeb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="admin-app-container">
+        
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <div class="brand-logo">
+                    <i class="fa-solid fa-hospital"></i>
+                </div>
+                <div class="brand-title">
+                    <h2>MediQR</h2>
+                    <span>Admin Portal</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="#" class="menu-item active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Patients Directory</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fa-solid fa-user-nurse"></i>
+                    <span>Medical Staff</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fa-solid fa-qrcode"></i>
+                    <span>QR Scanner Logs</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fa-solid fa-bell"></i>
+                    <span>System Alerts</span>
+                    <span class="badge-count">3</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Analytics & Reports</span>
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="admin-user-profile">
+                    <div class="admin-avatar">AD</div>
+                    <div class="admin-info">
+                        <strong>Admin Director</strong>
+                        <span>sysadmin@medicore.org</span>
+                    </div>
+                </div>
+                <a href="dashboard.html" class="logout-btn" title="Log out">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="top-header">
+                <div class="header-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Global search patients, staff, QR logs, or records...">
+                </div>
+
+                <div class="header-actions">
+                    <button class="header-icon-btn" title="Notifications">
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="header-dot"></span>
+                    </button>
+                    <button class="header-icon-btn" title="System Status">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </button>
+                    <div class="header-divider"></div>
+                    <div class="current-time-display">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Sep 9, 2026 • 9:41 PM</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="workspace">
+                
+                <div class="page-title-row">
+                    <div>
+                        <h1>Hospital Overview & Patient Management</h1>
+                        <p>Welcome back, Admin. Real-time system monitoring and records control.</p>
+                    </div>
+                    <div class="action-buttons-group">
+                        <button class="btn btn-secondary">
+                            <i class="fa-solid fa-download"></i> Export Reports
+                        </button>
+                        <button class="btn btn-primary">
+                            <i class="fa-solid fa-user-plus"></i> Register Patient
+                        </button>
+                    </div>
+                </div>
+
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-icon blue"><i class="fa-solid fa-users"></i></div>
+                        <div class="kpi-data">
+                            <span class="kpi-label">Total Active Patients</span>
+                            <h2>1,248</h2>
+                            <span class="kpi-trend positive"><i class="fa-solid fa-arrow-trend-up"></i> +4.2% this week</span>
+                        </div>
+                    </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-icon orange"><i class="fa-solid fa-bed-pulse"></i></div>
+                        <div class="kpi-data">
+                            <span class="kpi-label">Admitted In Wards</span>
+                            <h2>312</h2>
+                            <span class="kpi-trend neutral">84% bed occupancy</span>
+                        </div>
+                    </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-icon red"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                        <div class="kpi-data">
+                            <span class="kpi-label">Critical Alerts</span>
+                            <h2>3</h2>
+                            <span class="kpi-trend negative"><i class="fa-solid fa-arrow-trend-up"></i> Requires immediate review</span>
+                        </div>
+                    </div>
+
+                    <div class="kpi-card">
+                        <div class="kpi-icon green"><i class="fa-solid fa-user-nurse"></i></div>
+                        <div class="kpi-data">
+                            <span class="kpi-label">Staff On Duty</span>
+                            <h2>84</h2>
+                            <span class="kpi-trend positive">All shifts fully staffed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card-header">
+                        <h3>Active Patient Admission Records</h3>
+                        <div class="table-controls">
+                            <div class="search-filter">
+                                <i class="fa-solid fa-filter"></i>
+                                <select>
+                                    <option>Filter by Ward: All Wards</option>
+                                    <option>Ward 3A</option>
+                                    <option>Ward 2B</option>
+                                    <option>ICU B</option>
+                                </select>
+                            </div>
+                            <button class="icon-control-btn"><i class="fa-solid fa-rotate"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Patient Name & ID</th>
+                                    <th>Demographics</th>
+                                    <th>Ward / Room</th>
+                                    <th>Attending Physician</th>
+                                    <th>Admission Date</th>
+                                    <th>Status</th>
+                                    <th class="text-right">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="table-user-cell">
+                                            <div class="table-avatar blue">JD</div>
+                                            <div>
+                                                <strong>Juan Dela Cruz</strong>
+                                                <span>P-1024</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>45 yrs • Male • O+</td>
+                                    <td>Ward 3A</td>
+                                    <td>Dr. Ana Reyes</td>
+                                    <td>Sept 7, 2026</td>
+                                    <td><span class="status-badge orange">Admitted</span></td>
+                                    <td class="text-right">
+                                        <button class="table-action-btn" title="View Profile"><i class="fa-solid fa-eye"></i></button>
+                                        <button class="table-action-btn" title="Edit Record"><i class="fa-solid fa-pen-to-square"></i></button>
+                                        <button class="table-action-btn delete" title="Discharge"><i class="fa-solid fa-user-xmark"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-user-cell">
+                                            <div class="table-avatar red">MS</div>
+                                            <div>
+                                                <strong>Maria Santos</strong>
+                                                <span>P-1025</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>62 yrs • Female • A+</td>
+                                    <td>ICU B</td>
+                                    <td>Dr. Robert Chen</td>
+                                    <td>Sept 6, 2026</td>
+                                    <td><span class="status-badge red">Critical</span></td>
+                                    <td class="text-right">
+                                        <button class="table-action-btn" title="View Profile"><i class="fa-solid fa-eye"></i></button>
+                                        <button class="table-action-btn" title="Edit Record"><i class="fa-solid fa-pen-to-square"></i></button>
+                                        <button class="table-action-btn delete" title="Discharge"><i class="fa-solid fa-user-xmark"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-user-cell">
+                                            <div class="table-avatar green">PR</div>
+                                            <div>
+                                                <strong>Pedro Reyes</strong>
+                                                <span>P-1028</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>38 yrs • Male • B+</td>
+                                    <td>Ward 2B</td>
+                                    <td>Dr. Ana Reyes</td>
+                                    <td>Sept 5, 2026</td>
+                                    <td><span class="status-badge green">Stable</span></td>
+                                    <td class="text-right">
+                                        <button class="table-action-btn" title="View Profile"><i class="fa-solid fa-eye"></i></button>
+                                        <button class="table-action-btn" title="Edit Record"><i class="fa-solid fa-pen-to-square"></i></button>
+                                        <button class="table-action-btn delete" title="Discharge"><i class="fa-solid fa-user-xmark"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="table-user-cell">
+                                            <div class="table-avatar blue">CL</div>
+                                            <div>
+                                                <strong>Clara Lim</strong>
+                                                <span>P-1031</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>51 yrs • Female • AB+</td>
+                                    <td>Ward 1C</td>
+                                    <td>Dr. Michael Tan</td>
+                                    <td>Sept 8, 2026</td>
+                                    <td><span class="status-badge orange">Admitted</span></td>
+                                    <td class="text-right">
+                                        <button class="table-action-btn" title="View Profile"><i class="fa-solid fa-eye"></i></button>
+                                        <button class="table-action-btn" title="Edit Record"><i class="fa-solid fa-pen-to-square"></i></button>
+                                        <button class="table-action-btn delete" title="Discharge"><i class="fa-solid fa-user-xmark"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="table-footer">
+                        <span>Showing <strong>4</strong> of <strong>312</strong> active admitted patients</span>
+                        <div class="pagination-controls">
+                            <button class="page-btn" disabled><i class="fa-solid fa-chevron-left"></i></button>
+                            <button class="page-btn active">1</button>
+                            <button class="page-btn">2</button>
+                            <button class="page-btn">3</button>
+                            <button class="page-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
