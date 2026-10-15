@@ -1,4 +1,3 @@
-/* CSS Reset & Variables */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,7 +13,6 @@ body {
     min-height: 100vh;
 }
 
-/* Mobile Container Frame */
 .phone-container {
     width: 100%;
     max-width: 410px;
@@ -37,7 +35,6 @@ body {
     position: relative;
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     align-items: center;
@@ -76,11 +73,10 @@ body {
     background: #e5e7eb;
 }
 
-/* Scrollable Main Area */
 .profile-scroll-content {
     flex: 1;
     overflow-y: auto;
-    padding-bottom: 85px; /* space for bottom nav */
+    padding-bottom: 85px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -90,7 +86,6 @@ body {
     display: none;
 }
 
-/* Patient Bio Card */
 .patient-bio-card {
     background: #ffffff;
     border: 1px solid #f0f2f5;
@@ -157,7 +152,6 @@ body {
     margin-left: 2px;
 }
 
-/* Authorized Access Banner */
 .auth-access-banner {
     background-color: #f0f7ff;
     border: 1px solid #dbeafe;
@@ -191,7 +185,6 @@ body {
     border-radius: 50%;
 }
 
-/* Admission Details Banner */
 .admission-banner {
     background: #f9fafb;
     border: 1px solid #f3f4f6;
@@ -234,7 +227,6 @@ body {
     border-radius: 50%;
 }
 
-/* Medical Menu List */
 .medical-menu-list {
     display: flex;
     flex-direction: column;
@@ -273,7 +265,6 @@ body {
     flex-shrink: 0;
 }
 
-/* Menu icon themes */
 .red-icon { background-color: #fee2e2; color: #dc2626; }
 .purple-icon { background-color: #f3e8ff; color: #9333ea; }
 .green-icon { background-color: #d1fae5; color: #059669; }
@@ -309,7 +300,6 @@ body {
 .purple-pill { background-color: #f3e8ff; color: #9333ea; }
 .cyan-pill { background-color: #e0f2fe; color: #0369a1; }
 
-/* Access Footer Note */
 .access-footer-note {
     background: #fafaf9;
     border: 1px dashed #e7e5e4;
@@ -331,7 +321,6 @@ body {
     color: #44403c;
 }
 
-/* --- Bottom Navigation Bar Styles --- */
 .bottom-nav {
     position: absolute;
     bottom: 0;

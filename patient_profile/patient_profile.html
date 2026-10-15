@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patient Information</title>
-    <!-- Link to external CSS stylesheet -->
+    <title>MediQR - Patient Information</title>
     <link rel="stylesheet" href="patient_profile.css">
-    <!-- FontAwesome for Icons -->
     <script src="https://kit.fontawesome.com/464eb7faeb.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,7 +12,6 @@
     <div class="phone-container">
         <div class="screen">
             
-            <!-- Top Navigation Bar -->
             <header class="navbar">
                 <a href="dashboard.html" class="icon-btn back-btn" aria-label="Go to dashboard">
                     <i class="fa-solid fa-chevron-left"></i>
@@ -30,10 +27,8 @@
                 </div>
             </header>
 
-            <!-- Scrollable Content -->
             <div class="profile-scroll-content">
 
-                <!-- Patient Bio Header -->
                 <div class="patient-bio-card">
                     <div class="patient-avatar-box">
                         <i class="fa-solid fa-user"></i>
@@ -50,7 +45,6 @@
                     </div>
                 </div>
 
-                <!-- Authorized Access Banner -->
                 <div class="auth-access-banner">
                     <div class="auth-left">
                         <i class="fa-solid fa-lock"></i>
@@ -62,7 +56,6 @@
                     </div>
                 </div>
 
-                <!-- Admission Details Banner -->
                 <div class="admission-banner">
                     <div class="admission-col">
                         <span class="col-label">ADMITTED</span>
@@ -78,9 +71,7 @@
                     </div>
                 </div>
 
-                <!-- Medical Menu List Cards -->
                 <div class="medical-menu-list">
-                    <!-- Allergies -->
                     <div class="menu-card alert-bg">
                         <div class="menu-icon-box red-icon">
                             <i class="fa-solid fa-triangle-exclamation"></i>
@@ -92,7 +83,6 @@
                         </div>
                     </div>
 
-                    <!-- Current Medications -->
                     <div class="menu-card">
                         <div class="menu-icon-box purple-icon">
                             <i class="fa-solid fa-pills"></i>
@@ -104,7 +94,6 @@
                         </div>
                     </div>
 
-                    <!-- Medical History -->
                     <div class="menu-card">
                         <div class="menu-icon-box green-icon">
                             <i class="fa-solid fa-file-medical"></i>
@@ -115,7 +104,6 @@
                         </div>
                     </div>
 
-                    <!-- Diagnosis -->
                     <div class="menu-card">
                         <div class="menu-icon-box blue-icon">
                             <i class="fa-solid fa-stethoscope"></i>
@@ -126,7 +114,6 @@
                         </div>
                     </div>
 
-                    <!-- Laboratory Results -->
                     <div class="menu-card">
                         <div class="menu-icon-box cyan-icon">
                             <i class="fa-solid fa-flask"></i>
@@ -139,7 +126,6 @@
                     </div>
                 </div>
 
-                <!-- Record Accessed Footer Note -->
                 <div class="access-footer-note">
                     <i class="fa-solid fa-lock"></i>
                     <span>Record accessed by <strong>Nurse Maria L.</strong> • Sep 9, 2026 at 9:41 PM</span>
@@ -147,7 +133,6 @@
 
             </div>
 
-            <!-- Uniform Bottom Navigation Bar -->
             <nav class="bottom-nav">
                 <a href="dashboard.html" class="nav-item">
                     <i class="fa-solid fa-house nav-icon"></i>
@@ -159,4 +144,26 @@
                     <span class="nav-text">Patients</span>
                 </a>
 
-                <a href="scan.html"
+                <a href="scan.html" class="nav-item scan-tab">
+                    <div class="scan-btn-wrapper">
+                        <i class="fa-solid fa-expand scan-icon"></i>
+                    </div>
+                    <span class="nav-text">Scan</span>
+                </a>
+
+                <a href="alerts.html" class="nav-item badge-item">
+                    <i class="fa-solid fa-bell nav-icon"></i>
+                    <span class="nav-text">Alerts</span>
+                </a>
+
+                <a href="profile.html" class="nav-item">
+                    <i class="fa-solid fa-user nav-icon"></i>
+                    <span class="nav-text">Profile</span>
+                </a>
+            </nav>
+
+        </div>
+    </div>
+
+</body>
+</html>
