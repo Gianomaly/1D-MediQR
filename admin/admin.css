@@ -49,6 +49,13 @@ body {
     box-shadow: 0 4px 12px rgba(30, 98, 208, 0.25);
 }
 
+.brand-logo-img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain; 
+    border-radius: 10px; 
+}
+
 .brand-title h2 {
     font-size: 16px;
     font-weight: 700;
@@ -199,6 +206,7 @@ body {
     transform: translateY(-50%);
     color: #9ca3af;
     font-size: 14px;
+    pointer-events: none; 
 }
 
 .header-search input {
