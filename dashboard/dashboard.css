@@ -110,6 +110,7 @@ body {
     gap: 8px;
     cursor: pointer;
     align-self: flex-start;
+    text-decoration: none;
 }
 .btn-icon {
     width: 30px;
