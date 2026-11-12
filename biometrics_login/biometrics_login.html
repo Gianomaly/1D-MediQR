@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediQR - Biometric Authentication</title>
+  <link rel="stylesheet" href="biometrics_login.css">
+  <script src="https://kit.fontawesome.com/464eb7faeb.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+  <div class="auth-container">
+    
+    <header class="auth-header">
+      <div class="logo-image-wrapper">
+        <img src="logo.png" alt="MediQR Logo" class="brand-logo-img" />
+      </div>
+      <h1 class="brand-name">Medi<span class="blue-text">QR</span></h1>
+      <p class="brand-subtitle">SECURE PATIENT INFORMATION SYSTEM</p>
+    </header>
+
+    <main class="biometric-section">
+      <h2 class="welcome-heading">Biometric Sign In</h2>
+      <p class="welcome-subtext">
+        Place your finger on the device scanner area to verify your medical staff profile credentials.
+      </p>
+
+      <div class="scanner-hub">
+        <div class="pulse-ring-outer"></div>
+        <div class="pulse-ring-inner"></div>
+        <button id="biometric-trigger" class="fingerprint-btn">
+          <i class="fa-solid fa-fingerprint fingerprint-graphic"></i>
+        </button>
+      </div>
+
+      <p class="status-message">Ready to scan...</p>
+      
+      <button onclick="window.location.href='../login_page/login.html'" class="fallback-btn">
+        <i class="fa-solid fa-keyboard"></i> Use Staff ID Instead
+      </button>
+    </main>
+
+    <footer class="auth-footer">
+      <i class="fa-solid fa-shield-halved security-icon"></i>
+      <span class="security-text">Biometric data is securely encrypted locally</span>
+    </footer>
+
+  </div>
+  <script>
+    const scanBtn = document.getElementById('biometric-trigger');
+    const statusMsg = document.querySelector('.status-message');
+    const hub = document.querySelector('.scanner-hub');
+
+    scanBtn.addEventListener('click', () => {
+      hub.classList.add('scanning');
+      statusMsg.textContent = "Verifying biometric signature...";
+      statusMsg.classList.add('loading');
+      
+      setTimeout(() => {
+        hub.classList.remove('scanning');
+        hub.classList.add('success');
+        statusMsg.classList.remove('loading');
+        statusMsg.classList.add('granted');
+        statusMsg.textContent = "Access Granted! Redirecting...";
+        
+        setTimeout(() => {
+          window.location.href = "../dashboard/dashboard.html";
+        }, 1200);
+      }, 2200);
+    });
+  </script>
+</body>
+</html>
