@@ -1,14 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: #f8fafc;
+    margin: 0;
+    min-height: 100vh;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.app-container {
     width: 100%;
-    max-width: 400px;
-    padding: 40px 24px;
+    max-width: 412px;
+    min-height: 100%;
+    background-color: #ffffff;
+    padding: 24px 20px;
     border: 1px solid #e2e8f0;
     border-radius: 32px;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 
-              0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
 }
+
+main,
+.container {
+    padding-bottom: 20px;
+}
+
+/* Header */
 .app-header {
     display: flex;
     justify-content: space-between;
@@ -16,26 +37,32 @@ body {
     padding: 4px;
     background-color: #ffffff;
 }
+
 .subtext {
     font-size: 15px;
     margin-bottom: 5px;
-    color: #555;
+    color: #555555;
 }
+
 .username {
     font-size: 22px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
 .prompt {
     font-size: 15px;
     margin-top: 5px;
-    color: #555;
+    color: #555555;
 }
+
 .actions-group {
     display: flex;
     gap: 12px;
 }
-.icon-btn, .profile-btn {
+
+.icon-btn,
+.profile-btn {
     width: 44px;
     height: 44px;
     border-radius: 12px;
@@ -46,14 +73,17 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
+
 .icon-btn {
     background-color: #f8f9fa;
     position: relative;
 }
+
 .profile-btn {
     background-color: #e6f0ff;
     color: #0052cc;
 }
+
 .notification-dot {
     position: absolute;
     top: 10px;
@@ -63,6 +93,8 @@ body {
     background-color: #ff4d4f;
     border-radius: 50%;
 }
+
+/* Promo Card */
 .promo-card {
     display: flex;
     justify-content: space-between;
@@ -72,31 +104,41 @@ body {
     background: linear-gradient(135deg, #1e62d0 0%, #008793 100%);
     color: #ffffff;
     font-family: sans-serif;
-    max-width: 500px;  
+    max-width: 500px;
 }
+
 .card-content {
     display: flex;
     flex-direction: column;
     gap: 8px;
     max-width: 65%;
 }
+
 .badge {
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 0.5px;
     opacity: 0.8;
 }
+
 .card-title {
     margin: 0;
     font-size: 24px;
     font-weight: 700;
 }
+
 .card-description {
     margin: 0 0 12px 0;
     font-size: 15px;
     line-height: 1.4;
     opacity: 0.9;
 }
+
+.promo-card a,
+.scan-link {
+    text-decoration: none;
+}
+
 .scan-button {
     background-color: #ffffff;
     color: #1e62d0;
@@ -112,40 +154,51 @@ body {
     align-self: flex-start;
     text-decoration: none;
 }
+
+.scan-button-text {
+    text-decoration: none;
+}
+
 .btn-icon {
     width: 30px;
     height: 30px;
     object-fit: contain;
 }
+
 .card-image-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .qr-graphic {
     width: 80px;
     height: auto;
 }
+
+/* Quick Actions */
 .quick-actions-section {
     padding: 24px 16px;
     font-family: sans-serif;
     max-width: 100%;
-    box-sizing: border-box;
 }
+
 .section-title {
     font-size: 12px;
     color: #8c9ba5;
     letter-spacing: 0.5px;
     font-weight: 700;
     margin: 0 0 16px 0;
-    text-align: left; 
+    text-align: left;
 }
+
 .cards-grid {
     display: flex;
     justify-content: space-between;
     gap: 12px;
     width: 100%;
 }
+
 .action-card {
     flex: 1;
     display: flex;
@@ -158,40 +211,57 @@ body {
     text-decoration: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 .action-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
+
 .card-icon {
     font-size: 20px;
     margin-bottom: 10px;
 }
+
 .card-heading {
     font-size: 14px;
     font-weight: 700;
-    color: #1a2530; 
+    color: #1a2530;
     margin: 0 0 6px 0;
     line-height: 1.2;
 }
+
 .card-subtext {
     font-size: 11px;
     color: #8c9ba5;
     margin: 0;
     line-height: 1.3;
 }
+
 #search-icon {
-    color: blue
+    color: blue;
 }
+
 #recent-icon {
     color: #008793;
 }
+
 #alerts-icon {
     color: rgb(152, 78, 156);
 }
-.card-blue { background-color: #f3f7ff; }
-.card-green { background-color: #f0fbf7; }
-.card-purple { background-color: #f7f4fc; }
 
+.card-blue {
+    background-color: #f3f7ff;
+}
+
+.card-green {
+    background-color: #f0fbf7;
+}
+
+.card-purple {
+    background-color: #f7f4fc;
+}
+
+/* Recent Patients */
 .recent-patients-section {
     padding: 16px;
     font-family: sans-serif;
@@ -204,11 +274,7 @@ body {
     margin-bottom: 16px;
 }
 
-.section-title {
-    font-size: 12px;
-    color: #8c9ba5;
-    letter-spacing: 0.5px;
-    font-weight: 700;
+.section-header .section-title {
     margin: 0;
 }
 
@@ -308,15 +374,18 @@ body {
     background-color: #f3effa;
     color: #7944d4;
 }
+
+/* Shift Status */
 .shift-status-card {
     display: flex;
-    align-items: center;            
-    background-color: #f4f8fd;     
+    align-items: center;
+    background-color: #f4f8fd;
     border-radius: 16px;
     padding: 12px 16px;
-    margin: 16px;                   
+    margin: 16px;
     font-family: sans-serif;
 }
+
 .shift-icon-box {
     width: 40px;
     height: 40px;
@@ -333,9 +402,11 @@ body {
     font-size: 18px;
     color: #1e62d0;
 }
+
 .shift-details {
-    flex-grow: 1;                
+    flex-grow: 1;
 }
+
 .shift-title {
     font-size: 14px;
     font-weight: 700;
@@ -344,7 +415,7 @@ body {
 }
 
 .status-text {
-    color: #1a2530;               
+    color: #1a2530;
 }
 
 .shift-subtext {
@@ -368,24 +439,27 @@ body {
 .pulse-dot {
     width: 10px;
     height: 10px;
-    background-color: #2ec872;    
+    background-color: #2ec872;
     border-radius: 50%;
     display: inline-block;
 }
+
+/* Bottom Navigation */
 .bottom-nav {
-    position:sticky;
+    position: sticky;
     bottom: 0;
     left: 0;
     right: 0;
     height: 68px;
     background-color: #ffffff;
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
     align-items: center;
     border-top: 1px solid #f0f2f5;
     box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.03);
-    padding-bottom: env(safe-area-inset-bottom); 
+    padding-bottom: env(safe-area-inset-bottom);
 }
+
 .nav-item {
     display: flex;
     flex-direction: column;
@@ -400,13 +474,16 @@ body {
     height: 100%;
     position: relative;
 }
+
 .nav-icon {
     font-size: 18px;
     margin-bottom: 4px;
 }
+
 .nav-item.active {
-    color: #1e62d0;                
+    color: #1e62d0;
 }
+
 .nav-item.active::after {
     content: '';
     position: absolute;
@@ -416,30 +493,35 @@ body {
     background-color: #1e62d0;
     border-radius: 2px;
 }
+
 .scan-tab {
     position: relative;
-    overflow: visible;           
-    color: #1e62d0;                
+    overflow: visible;
+    color: #1e62d0;
 }
+
 .scan-btn-wrapper {
     width: 48px;
     height: 48px;
     background: linear-gradient(135deg, #1e62d0 0%, #008793 100%);
     color: #ffffff;
-    border-radius: 14px;            
+    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -32px;              
+    margin-top: -32px;
     margin-bottom: 4px;
     box-shadow: 0 4px 12px rgba(30, 98, 208, 0.3);
 }
+
 .scan-icon {
     font-size: 20px;
 }
+
 .badge-item {
     position: relative;
 }
+
 .badge-item::before {
     content: '';
     position: absolute;
@@ -450,7 +532,4 @@ body {
     background-color: #ff4d4f;
     border-radius: 50%;
     z-index: 2;
-}
-main, .container {
-    padding-bottom: 20px;
 }
